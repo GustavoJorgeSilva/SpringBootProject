@@ -1,6 +1,7 @@
 package com.udemy.course.entities.pk;
 
 import com.udemy.course.entities.Order;
+import com.udemy.course.entities.OrderItem;
 import com.udemy.course.entities.Product;
 import jakarta.persistence.Embeddable;
 import jakarta.persistence.JoinColumn;
