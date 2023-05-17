@@ -28,6 +28,8 @@ public class OrderItem  implements Serializable {
         this.quantity = quantity;
         this.price = price;
     }
+
+    // METODOS GET E SET DE ORDER E PRODUCT USANDO O ATRIBUTO ID PARA ACESSAR OS OBJ
     @JsonIgnore
     public Order getOrder(){
         return id.getOrder();
@@ -37,6 +39,7 @@ public class OrderItem  implements Serializable {
         id.setOrder(order);
     }
 
+
     public Product getProduct(){
         return id.getProduct();
     }
@@ -44,6 +47,9 @@ public class OrderItem  implements Serializable {
     public void setProduct(Product product){
         id.setProduct(product);
     }
+
+
+
 
 
     public Integer getQuantity() {
